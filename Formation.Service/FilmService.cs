@@ -11,8 +11,13 @@ namespace Formation.Service
 {
     public class FilmService : Service<Film>, IFilmService
     {
+
+        static IDataBaseFactory factory = new DataBaseFactory();
+        static IUnitOfWork utk = new UnitOfWork(factory);
+
         public FilmService(IUnitOfWork utk) : base(utk)
         {
         }
+
     }
 }
