@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Formation.Domain.Entity
 {
-    class Film
+    public class Film
     {
+
     }
 }
